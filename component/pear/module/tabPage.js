@@ -291,7 +291,7 @@ layui.define(['jquery', 'element', 'dropdown'], function (exports) {
 				element.tabAdd(this.option.elem, {
 					id: opt.id,
 					title: title,
-					content: `<iframe id="${opt.id}" type="${opt.type}" data-frameid="${opt.id}" scrolling="auto" frameborder="0" src="${opt.url}" style="width:100%;height:100%;" allowfullscreen="true"></iframe>`
+					content: `<iframe id="${opt.id}" type="${opt.type}" data-frameid="${opt.id}" scrolling="auto" frameborder="0" src="${opt.url}" style="width:100%;height:99%;" allowfullscreen="true"></iframe>`
 				});
 
 			} else {
@@ -347,7 +347,7 @@ layui.define(['jquery', 'element', 'dropdown'], function (exports) {
 					element.tabAdd(this.option.elem, {
 						id: opt.id,
 						title: title,
-						content: `<iframe id="${opt.id}" type="${opt.type}" data-frameid="${opt.id}" scrolling="auto" frameborder="0" src="${opt.url}" style="width:100%;height:100%;" allowfullscreen="true"></iframe>`
+						content: `<iframe id="${opt.id}" type="${opt.type}" data-frameid="${opt.id}" scrolling="auto" frameborder="0" src="${opt.url}" style="width:100%;height:99%;" allowfullscreen="true"></iframe>`
 					});
 				} else {
 					$.ajax({
@@ -511,7 +511,7 @@ layui.define(['jquery', 'element', 'dropdown'], function (exports) {
 
 			if (item.type === "_iframe") {
 
-				content += `<div class="${option.index == index ? 'layui-show' : ''} layui-tab-item"><iframe id="${item.id}" type="${item.type}" data-frameid="${item.id}" scrolling="auto" frameborder="0" src="${item.url}" style="width:100%;height:100%;" allowfullscreen="true"></iframe></div>`
+				content += `<div class="${option.index == index ? 'layui-show' : ''} layui-tab-item"><iframe id="${item.id}" type="${item.type}" data-frameid="${item.id}" scrolling="auto" frameborder="0" src="${item.url}" style="width:100%;height:99%;" allowfullscreen="true"></iframe></div>`
 
 			} else {
 
