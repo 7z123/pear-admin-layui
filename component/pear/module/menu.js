@@ -13,7 +13,7 @@ layui.define(['table', 'jquery', 'element'], function (exports) {
 
 		var option = {
 			elem: opt.elem,
-			async: opt.async || true,
+			async: typeof opt.async === 'undefined' ? true : opt.async,
 			parseData: opt.parseData,
 			url: opt.url,
 			method: opt.method ? opt.method : "GET",
